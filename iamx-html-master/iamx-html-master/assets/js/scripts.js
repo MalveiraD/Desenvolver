@@ -29,14 +29,10 @@ jQuery(function ($) {
      * Preloader
     /* ---------------------------------------------- */
 
-<<<<<<< Updated upstream
-//    $(window).document(function() {
-=======
     $(window).document(function() {
->>>>>>> Stashed changes
         $('#pre-status').fadeOut();
         $('#tt-preloader').delay(350).fadeOut('slow');
-//    });
+    });
 
 
 
@@ -160,8 +156,6 @@ jQuery(function ($) {
         }
     });
 
-<<<<<<< Updated upstream
-=======
 
     // -------------------------------------------------------------
     // Shuffle
@@ -231,7 +225,7 @@ jQuery(function ($) {
     /* Vimeo API: http://developer.vimeo.com/player/js-api */
     
         var iframe = document.getElementById('nofocusvideo');
-        $f == Froogaloop
+        // $f == Froogaloop
         var player = $f(iframe);
 
         $('.modal').on('hidden.bs.modal', function () {
@@ -246,7 +240,6 @@ jQuery(function ($) {
 
 
 
->>>>>>> Stashed changes
     // -------------------------------------------------------------
     // STELLAR FOR BACKGROUND SCROLLING
     // -------------------------------------------------------------
@@ -282,7 +275,7 @@ jQuery(function ($) {
     // -------------------------------------------------------------
     // Google Map
     // -------------------------------------------------------------
-/*
+
     (function () {
         var myLatlng = new google.maps.LatLng(41.372641, -74.687387);
 
@@ -347,5 +340,11 @@ jQuery(function ($) {
             });
 
     }());
-*/
+
+
 });
+
+
+
+
+
