@@ -29,10 +29,10 @@ jQuery(function ($) {
      * Preloader
     /* ---------------------------------------------- */
 
-    $(document).ready(function() {
+//    $(window).document(function() {
         $('#pre-status').fadeOut();
         $('#tt-preloader').delay(350).fadeOut('slow');
-    });
+//    });
 
     // -------------------------------------------------------------
     // Animated scrolling / Scroll Up
@@ -153,90 +153,6 @@ jQuery(function ($) {
         }
     });
 
-
-    // -------------------------------------------------------------
-    // Shuffle
-    // -------------------------------------------------------------
-
-    (function () {
-
-        var $grid = $('#grid');
-
-        $grid.shuffle({
-            itemSelector: '.portfolio-item'
-        });
-
-        /* reshuffle when user clicks a filter item */
-        $('#filter a').click(function (e) {
-            e.preventDefault();
-
-            // set active class
-            $('#filter a').removeClass('active');
-            $(this).addClass('active');
-
-            // get group name from clicked item
-            var groupName = $(this).attr('data-group');
-
-            // reshuffle grid
-            $grid.shuffle('shuffle', groupName );
-        });
-
-
-    }());
-
-
-    // -------------------------------------------------------------
-    // Magnific Popup
-    // -------------------------------------------------------------
-
-    (function () {
-      $('.image-link').magnificPopup({
-
-        gallery: {
-          enabled: true
-        },
-        removalDelay: 300, // Delay in milliseconds before popup is removed
-        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
-        type:'image'
-
-      });
-
-    }());
-
-
-
-    // -------------------------------------------------------------
-    // Fit Vids
-    // -------------------------------------------------------------
-    (function () {
-        $(".video-container").fitVids();
-    }());
-
-
-
-    // -------------------------------------------------------------
-    // Video auto play
-    // -------------------------------------------------------------
-    (function () {
-    
-    /* Vimeo API: http://developer.vimeo.com/player/js-api */
-    
-        var iframe = document.getElementById('nofocusvideo');
-        // $f == Froogaloop
-        var player = $f(iframe);
-
-        $('.modal').on('hidden.bs.modal', function () {
-        player.api('pause');
-        })
-
-        $('.modal').on('shown.bs.modal', function () {
-        player.api('play');
-        })
-    }());
-
-
-
-
     // -------------------------------------------------------------
     // STELLAR FOR BACKGROUND SCROLLING
     // -------------------------------------------------------------
@@ -272,7 +188,7 @@ jQuery(function ($) {
     // -------------------------------------------------------------
     // Google Map
     // -------------------------------------------------------------
-
+/*
     (function () {
         var myLatlng = new google.maps.LatLng(41.372641, -74.687387);
 
@@ -337,8 +253,7 @@ jQuery(function ($) {
             });
 
     }());
-
-
+*/
 });
 
 
